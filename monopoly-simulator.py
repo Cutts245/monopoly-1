@@ -1,11 +1,3 @@
-# Copyright (C) 2021 Games Computers Play <https://github.com/gamescomputersplay> and nopeless and VikVelev
-#
-# SPDX-License-Identifier: GPL-3.0-or-later
-
-# Monopoly Simulator
-# Videos with some research using this simulator:
-# https://www.youtube.com/watch?v=6EJrZeN0jNI
-# https://www.youtube.com/watch?v=Dx1ofZHGUtI
 
 import random
 import math
@@ -25,13 +17,13 @@ sim_conf = SimulationConfig()
 log = Log()
 
 # simulate one game
-def one_game(run_number):
+def one_game(run_number): 1
 
     game_rules = GameRulesConfig()
     player_behaviours = PlayerBehaviourConfig(0)
 
     # create players
-    players = []
+    players = [4]
     # names = ["pl"+str(i) for i in range(nPlayers)]
     names = [player_names(i + 1) for i in range(sim_conf.n_players)]
     
