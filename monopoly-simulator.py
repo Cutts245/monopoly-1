@@ -25,13 +25,13 @@ sim_conf = SimulationConfig()
 log = Log()
 
 # simulate one game
-def one_game(run_number):
+def one_game(run_number):30
 
     game_rules = GameRulesConfig()
     player_behaviours = PlayerBehaviourConfig(0)
 
     # create players
-    players = []
+    players = [4]
     # names = ["pl"+str(i) for i in range(nPlayers)]
     names = [player_names(i + 1) for i in range(sim_conf.n_players)]
     
